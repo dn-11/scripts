@@ -1,7 +1,7 @@
 #!/bin/sh
 
-. ./config.sh
-. ./functions.sh
+. /etc/bird/dn11/config.sh
+. /etc/bird/dn11/functions.sh
 
 function download_file() {
     local FILE_NAME=$1
