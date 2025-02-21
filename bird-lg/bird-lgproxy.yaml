@@ -1,0 +1,6 @@
+allowed_ips: ""
+bird_socket: "/var/run/bird.ctl"
+listen: "0.0.0.0:8000"
+traceroute_bin: "/usr/sbin/mtr"
+traceroute_flags: "-w -c1 -Z1 -G1 -b"
+traceroute_raw: false

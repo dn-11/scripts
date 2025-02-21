@@ -1,0 +1,16 @@
+servers: "server1,server2"
+domain: "lg.local"
+listen: "0.0.0.0:5000"
+proxy_port: 8000
+whois: "/usr/bin/whois"
+dns_interface: "asn.cymru.com"
+bgpmap_info: "asn,as-name,ASName,descr"
+title_brand: "Bird-lg Go"
+navbar_brand: "Bird-lg Go"
+navbar_brand_url: "/"
+navbar_all_servers: "总览"
+navbar_all_url: "all"
+net_specific_mode: ""
+protocol_filter: ""
+name_filter: ""
+timeout: 120
