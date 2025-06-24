@@ -3,8 +3,8 @@
 mkdir -p /tmp/tmp
 cd /tmp/tmp
 
-wget https://github.com/xddxdd/bird-lg-go/releases/download/v1.3.8/bird-lg-go-v1.3.8-linux-arm64.tar.gz -O bird-lg-go.tar.gz
-wget https://github.com/xddxdd/bird-lg-go/releases/download/v1.3.8/bird-lgproxy-go-v1.3.8-linux-arm64.tar.gz -O bird-lgproxy-go.tar.gz
+wget https://github.com/xddxdd/bird-lg-go/releases/download/v1.3.9/bird-lg-go-v1.3.9-linux-arm64.tar.gz -O bird-lg-go.tar.gz
+wget https://github.com/xddxdd/bird-lg-go/releases/download/v1.3.9/bird-lgproxy-go-v1.3.9-linux-arm64.tar.gz -O bird-lgproxy-go.tar.gz
 
 tar -xzf bird-lg-go.tar.gz
 tar -xzf bird-lgproxy-go.tar.gz
