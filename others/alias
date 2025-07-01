@@ -1,0 +1,17 @@
+alias w='watch -n 1 -d -c'
+alias bsp='birdc show protocols'
+alias bspe='birdc show protocols | grep -v Established'
+alias bon='birdc show ospf neighbors'
+alias ws='wg show'
+alias wb='wg-quick-op bounce'
+alias wd='wg-quick-op down'
+alias wgkey='wg genkey | tee /dev/tty | wg pubkey'
+
+wp() {
+    wg show | awk '/interface/ {interface=$2} /listening port/ {print $3, interface}' | sort -n
+}
+
+pn() {
+  local name="$1"
+  watch -n 1 -d -c "wg show dn11_$name && birdc s p a dn11_$name"
+}
