@@ -10,7 +10,7 @@ if (bgp-large-communities any-regexp "^(422008|421111)[0-9]+:11003:11111$" || bg
       append bgp-large-communities 4220080300:11010:400;
     }
   }else{
-    if (bgp-large-communities any-regexp "^(422008|421111)[0-9]+:11001:11111$" || bgp-large-communities any-regexp "^(422008|421111)[0-9]+:11001:([^2][0-9]|[0-9][^4]|[0-9]|[0-9][0-9][0-9]+)$"){
+    if (bgp-large-communities any-regexp "^(422008|421111)[0-9]+:11001:11111$" || bgp-large-communities any-regexp "^(422008|421111)[0-9]+:11001:([^4][0-9]|[0-9][^2]|[0-9]|[0-9][0-9][0-9]+)$"){
       if (not bgp-large-communities any-regexp "^4220080300:11010:(300|400|500)$") {
         delete bgp-large-communities regexp ^4220080300:11010:[0-9]+$;
         append bgp-large-communities 4220080300:11010:300;
