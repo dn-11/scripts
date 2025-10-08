@@ -32,5 +32,5 @@ if (bgp-large-communities any-regexp "^(422008|421111)[0-9]+:11003:11111$" || bg
 }
 
 if (bgp-large-communities-empty) {
-  append bgp-large-communities 4220080300:11010:100;
+  append bgp-large-communities 4220080300:11010:200;
 }
