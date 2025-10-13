@@ -158,6 +158,12 @@ fs.file-max = 1048576
 vm.swappiness = 30
 ```
 
+小内存设备开启超分
+
+```conf
+vm.overcommit_memory = 1
+```
+
 ### 3. kernel.msg*
 
 消息队列
